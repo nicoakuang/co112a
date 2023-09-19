@@ -14,5 +14,9 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    // Put your code here:
+   // Implementasi gerbang OR menggunakan gerbang NAND, NOT, dan AND yang Anda miliki
+    Not(in=a, out=nota);
+    Not(in=b, out=notb);
+    And(a=nota, b=notb, out=andresult);
+    Not(in=andresult, out=out);
 }

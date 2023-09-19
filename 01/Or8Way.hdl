@@ -9,9 +9,12 @@
  */
 
 CHIP Or8Way {
-    IN in[8];
-    OUT out;
+    IN in[8];    // 8-bit input array
+    OUT out;     // Single-bit output
 
     PARTS:
-    // Put your code here:
+    // Implement the 8-way OR gate using individual OR gates
+    
+    
+    
 }
