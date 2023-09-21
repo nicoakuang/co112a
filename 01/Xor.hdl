@@ -14,7 +14,6 @@ CHIP Xor {
 
     PARTS:
     // Put your code here:
-    // Implementasi gerbang XOR menggunakan gerbang NAND, NOT, dan OR yang Anda miliki
     Not(in=b, out=notb);
     And(a=a, b=notb, out=and1);
     Not(in=a, out=nota);

@@ -15,10 +15,7 @@ CHIP DMux {
 
     PARTS:
     // Put your code here:
-    // Implementasi gerbang DMUX menggunakan gerbang NAND, NOT, dan AND yang Anda miliki
     Not(in=sel, out=notsel); // Invert the select signal
-
-    // Use AND gates to select the outputs
     And(a=in, b=notsel, out=a);
     And(a=in, b=sel, out=b);
 }
