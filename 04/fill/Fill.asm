@@ -11,9 +11,6 @@
 // "white" in every pixel;
 // the screen should remain fully clear as long as no key is pressed.
 
-//NUBLETZ NOTE : in this program, the black screen loop will change the screen start from the top of the screen
-//				 while white screen loop will start from the bottom of the screen.
-
 // Put your code here.
 	@8192 //total repeat for changing the screen (n)
 	D=A
