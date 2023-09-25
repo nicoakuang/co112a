@@ -27,5 +27,28 @@ CHIP Memory {
     OUT out[16];
 
     PARTS:
+    //Notes:
+    //loadM = load for memory
+    //loadS = load for screen
+
     // Put your code here:
+    Not(in=address[14], out=notA14);
+    And(a=notA14, b=load, out=loadM); //If (address 14 == 0 -> notA14 == 1) and load == 1, loadS == 1. else loadM == 0
+    And(a=address[14], b=load, out=loadS); //If address 14 == 1 and load == 1, loadS == 1. else loadS == 0
+
+    Keyboard(out=keyb);
+    Screen(in=in, load=loadS, address=address[0..12], out=scr); //if loadS == 1, write input on the screen
+    RAM16K(in=in, load=loadM, address=address[0..13], out=Mem); //if loadM == 1, save input in the memory from the specific address
+
+    Mux16(a=scr, b=keyb, sel=address[13], out=outSKey); 
+    // 110000000000000 is the address for keyboard while 10XXXXXXXXXXXXX is the address for screen. so let address[13] as the sell.
+    //  ^                                                 ^
+    // address[13] == 1                               address[13] == 0
+    // if address[13] == 1, write input in keyboard memory
+    // else if address[13] == 0, write input in screen memory
+
+    Mux16(a=Mem, b=outSKey, sel=address[14], out=out);
+    // 1XXXXXXXXXXXXXXX is the address for screen and keyboard memory while 0XXXXXXXXXXXXXXX is the address of accessable memory
+    // ^                                                                    ^
+    // address[14] == 1                                                 address[14] == 0
 }
