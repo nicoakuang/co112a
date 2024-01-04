@@ -1,19 +1,24 @@
+``````
 Project 5
+
 In this project you will integrate the ALU and RAM devices built in projects 2 and 3 into a computer
 system capable of executing programs written in the machine language introduced in project 4.
 
 Objective, Build the following chips:
 Memory, CPU, Computer    
-
-Note: 
-Memory notes:
+``````
+-------------------
+#Memory notes:
 
 <img src="images/image.png" width="300">
 
 loadM = load for memory
+
 loadS = load for screen
 
-CPU notes:
+----------------------------------
+
+#CPU notes:
 
 refer from nand2tetris chapter 6,
 C-Instruction
@@ -40,7 +45,8 @@ instruction[2]  : j1
 instruction[1]  : j2
 instruction[0]  : j3
 ``````
-Computer notes:
+-----------------------
+#Computer notes:
 
 <img src="images/image1.png" width="300">
 
