@@ -1,4 +1,4 @@
 # Study notes
 Chapter | link
 --------|------
-第一週 -- 第一章的前六題 (NOT, AND, OR)
+第十週 -- CPU+Memory = Computer | https://github.com/nicoakuang/co112a/tree/master/05
