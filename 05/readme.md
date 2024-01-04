@@ -20,8 +20,7 @@ loadS = load for screen
 
 #CPU notes:
 
-refer from nand2tetris chapter 6,
-C-Instruction
+refer from nand2tetris chapter 6, C-Instruction
 
 https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/56440f_65a2d8eef0ed4e0ea2471030206269b5.pdf 
 
