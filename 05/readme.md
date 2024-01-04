@@ -7,7 +7,7 @@ Memory, CPU, Computer
 
 Note: 
 Memory notes:
-![memory](images/memory.png)
+![memory](images/image.png)
 loadM = load for memory
 loadS = load for screen
 
@@ -31,7 +31,4 @@ instruction[0]  : j3
 
 Computer notes:
 refer from nand2tetris chapter 5 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view Computer Architecture, Testing Computer
-![Computer](images/image.pngimage.png)
-
-
-05, readme
+![computer](images/image1.png)
