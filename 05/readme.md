@@ -7,14 +7,25 @@ Memory, CPU, Computer
 
 Note: 
 Memory notes:
-![memory](images/image.png)
+
+<img src="images/image.png" width="300">
+
 loadM = load for memory
 loadS = load for screen
 
 CPU notes:
-refer from nand2tetris chapter 6 https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/56440f_65a2d8eef0ed4e0ea2471030206269b5.pdf C-Instruction
-refer from nand2tetris chapter 5 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view CPU abstraction, implementation
-instruction[15] : to differ whether an instruction is an Address or a C-Instruction
+
+refer from nand2tetris chapter 6,
+C-Instruction
+
+https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/56440f_65a2d8eef0ed4e0ea2471030206269b5.pdf 
+
+
+
+refer from nand2tetris chapter 5 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view 
+
+CPU abstraction, implementation
+```instruction[15] : to differ whether an instruction is an Address or a C-Instruction
 instruction[12] : a
 instruction[11] : c1
 instruction[10] : c2
@@ -28,7 +39,10 @@ instruction[3]  : d3
 instruction[2]  : j1
 instruction[1]  : j2
 instruction[0]  : j3
-
+``````
 Computer notes:
-refer from nand2tetris chapter 5 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view Computer Architecture, Testing Computer
-![computer](images/image1.png)
+
+<img src="images/image1.png" width="300">
+
+refer from nand2tetris chapter 5, Computer Architecture, Testing Computer
+https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
