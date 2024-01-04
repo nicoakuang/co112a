@@ -27,9 +27,10 @@ https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/56440f_65a2d8eef0e
 
 
 
-refer from nand2tetris chapter 5 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view 
+refer from nand2tetris chapter 5, CPU abstraction, implementation
+https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view 
 
-CPU abstraction, implementation
+
 ```instruction[15] : to differ whether an instruction is an Address or a C-Instruction
 instruction[12] : a
 instruction[11] : c1
