@@ -6,6 +6,9 @@ system capable of executing programs written in the machine language introduced 
 
 Objective, Build the following chips:
 Memory, CPU, Computer    
+
+precentage got help by chatgpt 50%
+
 ``````
 -------------------
 #Memory notes:
@@ -19,6 +22,7 @@ loadS = load for screen
 ----------------------------------
 
 #CPU notes:
+<img src="images/image6.png" width="300">
 
 refer from nand2tetris chapter 6, C-Instruction
 
@@ -28,6 +32,7 @@ https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/56440f_65a2d8eef0e
 
 refer from nand2tetris chapter 5, CPU abstraction, implementation
 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view 
+
 
 
 ```instruction[15] : to differ whether an instruction is an Address or a C-Instruction
