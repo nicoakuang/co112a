@@ -32,49 +32,37 @@ Translating asm program into hack
 
 #mult.asm notes:
 ``````
-Multiplies R0 and R1 and stores the result in R2.
+This program multiplies the values stored in RAM[0] and RAM[1] and saves the result in RAM[2].
 
-(R0, R1, R2 refer to RAM[0], RAM[1], and RAM[2], respectively.)
+The program achieves the multiplication by using a loop that runs R1 times. Within the loop, the value in RAM[2] is incremented by the value in RAM[0]. This process is repeated until the loop finishes. The initial value of RAM[2] is set to 0.
 
-Program Function  --  R0 * R1 = R2. 
-To multiplies R0 and R1, this program would do a loop for R1 times.
+Example:
+Assuming RAM[0] = 3 and RAM[1] = 2.
 
-During the loop, R2 would be added by R0.
-For example if R0 = 5 and R1 = 3 then we just need to add 5 to R2 for 3 times.
+1. Increment RAM[2] by RAM[0]:
+   RAM[0] = 3
+   RAM[1] = 2
+   RAM[2] = 3
 
-(in this program the first value of R2 would always be 0)
-After the loop has finished, we got the final result R2.
+2. Decrement the value in RAM[1] by one:
+   RAM[0] = 3
+   RAM[1] = 1
+   RAM[2] = 3
 
-E.x.
-RAM[0] = 3
-RAM[1] = 2
-RAM[2] = 0 (still empty)
+3. Increment RAM[2] by RAM[0]:
+   RAM[0] = 3
+   RAM[1] = 1
+   RAM[2] = 6
 
-1. Add RAM[2] by RAM[0]
-RAM[0] = 3
-RAM[1] = 2
-RAM[2] = 3
+4. Decrement the value in RAM[1] by one:
+   RAM[0] = 3
+   RAM[1] = 0
+   RAM[2] = 6
 
-2. Decrease the value from RAM[1] by one 
-RAM[0] = 3
-RAM[1] = 1
-RAM[2] = 3
-
-3. Add RAM[2] by RAM[0]
-RAM[0] = 3
-RAM[1] = 1
-RAM[2] = 6
-
-4. Decrease the RAM[1] value by one
-RAM[0] = 3
-RAM[1] = 0
-RAM[2] = 6
-
-5. Since the value of RAM[1] equal to zero, so the loop is over.
-The program would store value in RAM[0] into RAM[2] as a final result.
-RAM[0] = 3
-RAM[1] = 0
-RAM[2] = 6
+5. Since the value in RAM[1] is zero, the loop ends. The program stores the value in RAM[2] as the final result.
+   RAM[0] = 3
+   RAM[1] = 0
+   RAM[2] = 6
 
 ``````
 <img src="images/imag1.png" width="300">
@@ -83,8 +71,9 @@ Translating asm program into hack
 
 <img src="images/image3.png" width="300">
 
-output 
+
 
 refer from CPU emulator demo
 https://www.youtube.com/watch?v=8XieZhHNFVY&list=PLYM3zllSC3SVdjWQUfedxssewHRS7EHuA&index=9
 
+ChatGPT use percentage 50%, chatgpt help for understand
