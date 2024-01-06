@@ -65,5 +65,11 @@ refer https://www.youtube.com/watch?v=5uSDC4Y_mVg
 
 Nand2Tetris Project 03 Sequential Logic: flip flop, register, RAM and program counter.
 
-got help by chatgpt to understand
+---
+
+#PC
+
+<img src="images/img5.png" width="200">
+
+got help by chatgpt to understand how assemble pc
 
