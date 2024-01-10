@@ -32,8 +32,6 @@ got help by chatgpt for understand
 
 -----
 
-#ALU
-
 refer:
 
 1. 計算機結構 第五週 -- ALU
