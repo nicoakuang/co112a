@@ -55,5 +55,16 @@ instruction[0]  : j3
 
 <img src="images/image1.png" width="300">
 
-refer from nand2tetris chapter 5, Computer Architecture, Testing Computer
+refer: 
+
+1. from nand2tetris chapter 5, Computer Architecture, Testing Computer
+
 https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
+
+2. 計算機結構 第九週 -- ＣＰＵ
+
+https://www.youtube.com/live/W4KfjWvRsCE?si=MIEocsei34-6FBiW
+
+3.計算機結構 第十週 -- CPU+Memory = Computer
+
+https://www.youtube.com/live/v6Jxe8PsR8A?si=H23n9-vvJ1eJ13Ih
