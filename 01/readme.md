@@ -36,10 +36,12 @@ DMux8Way
 <img src="images/8.jpg" width="200">
 
 
-refer : 
-Chapter 1 Nand2tetris
+refer:
+1. Chapter 1 Nand2tetris
 
 https://www.techtarget.com/whatis/definition/logic-gate-AND-OR-XOR-NOT-NAND-NOR-and-XNOR
 
+2. 計算機結構 第三週 -- Ａdder
 
+https://www.youtube.com/live/0XUUWyPu1wo?si=Pl2IsmeN-F_ufMnP
 

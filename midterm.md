@@ -1,7 +1,10 @@
 # Study notes
 Weeks | Note link
 --------|------
-第一章--第二週習 -- NOT, OR, NOT16, AND 16, OR16, MUX16, MUX4Way16, MUX8Way16, DMUX4Way, DMUX8Way | https://www.youtube.com/live/0XUUWyPu1wo?si=Pl2IsmeN-F_ufMnP
+第一章--第二週習 -- NOT, OR, NOT16, AND 16, OR16, MUX16, MUX4Way16, MUX8Way16, DMUX4Way, DMUX8Way | https://github.com/nicoakuang/co112a/tree/master/01
+
+
+
 
 第二章-- 第五週 -- ALU | https://github.com/nicoakuang/co112a/tree/master/02#readme
 https://www.youtube.com/live/coSF5QokW9A?si=IFBq-qFtOuZCuuOf
