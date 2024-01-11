@@ -35,6 +35,16 @@ GPUs play a crucial role in training and running machine learning and AI models.
 4. Cryptocurrency Mining:
 GPUs are used in cryptocurrency mining due to their parallel processing capabilities. They can efficiently perform the complex mathematical calculations required for mining various cryptocurrencies.
 
+~ In-school area implementation ~
+
+5. Video Processing:
+
+Video processing using GPUs involves leveraging the parallel computing capabilities of Graphics Processing Units to perform various tasks on video data. GPUs excel in parallelizing tasks, making them well-suited for video processing, where multiple operations need to be performed simultaneously on different pixels or frames.
+
+6. Image Processing:
+
+Image processing involves manipulating or altering images to enhance or extract information from them. This field covers a broad range of techniques and methods aimed at improving the quality of images, extracting useful features, or preparing images for analysis.
+
 ## Chapter two, CUDA Programming Fundamentals
 #### Basic CUDA syntax and concepts.
 
@@ -131,16 +141,49 @@ Different memory types (global, shared, and local) serve different purposes.
 
 1. Kernel Definition:
 
-Define parallel kernels for execution on the GPU.
+In CUDA programming, a kernel is a function that runs on the GPU. It is designed to be executed in parallel by multiple threads. The kernel function is identified with the __global__ qualifier.
+Here, blockIdx.x and threadIdx.x are used to calculate a unique thread identifier tid.
+For example:
+```
+__global__ void myKernel(int *input, int *output, int size) {
+    int tid = blockIdx.x * blockDim.x + threadIdx.x;
+    if (tid < size) {
+        output[tid] = input[tid] * input[tid];
+    }
+}
+```
 
 2. Kernel Invocation:
 
-Launch the parallel kernel with appropriate grid and block dimensions.
+Launching a CUDA kernel involves specifying the grid and block dimensions. The grid is a collection of blocks, and each block is a collection of threads. For example:
+This launches the myKernel with gridSize blocks and blockSize threads per block.
+```
+int blockSize = 256;
+int gridSize = (size + blockSize - 1) / blockSize;
+
+myKernel<<<gridSize, blockSize>>>(d_input, d_output, size);
+
+```
 
 3. Optimizations:
 
-Shared memory usage for efficient inter-thread communication.
-Warp and block optimizations for maximizing GPU throughput.
+Shared Memory Usage:
+- hared memory is a fast, on-chip memory that can be shared among threads within a block.
+- Efficient use of shared memory can enhance inter-thread communication and reduce global memory access.
+```
+__global__ void optimizedKernel(int *input, int *output, int size) {
+    extern __shared__ int sharedData[];
+
+    int tid = blockIdx.x * blockDim.x + threadIdx.x;
+    if (tid < size) {
+        sharedData[threadIdx.x] = input[tid];
+        __syncthreads();
+
+        output[tid] = sharedData[threadIdx.x] * sharedData[threadIdx.x];
+    }
+}
+
+```
 
 ### Reading Materials Overview of GPU Architecture
 - [Understanding GPU Architecture](https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html)
@@ -153,5 +196,5 @@ Warp and block optimizations for maximizing GPU throughput.
 
 ### Reading Materials Parallel Programming with GPUs
 - [Understanding Parallelism in GPU Computing](https://medium.com/@rakeshrajpurohit/understanding-cuda-for-gpu-computing-330fa792ca1c)
-- [Implementing Parallel Algorithms using CUDA](https://saadmahmud14.medium.com/parallel-programming-with-cuda-tutorial-part-2-96f6eaea2832)
+- [Implementing Parallel Algorithms using CUDA](https://www.sciencedirect.com/topics/computer-science/kernel-invocation)
 
