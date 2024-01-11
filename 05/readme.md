@@ -15,16 +15,18 @@ precentage got help by chatgpt 50%
 
 <img src="images/image.png" width="300">
 
-loadM = load for memory
-
+loadM = load for memory, 
 loadS = load for screen
+
+Utilizes subcomponents like RAM16K, Screen, and Keyboard to handle specific memory regions and I/O mappings.
 
 ----------------------------------
 
 #CPU notes:
 <img src="images/image6.png" width="300">
 
-refer from nand2tetris chapter 6, C-Instruction
+Reference
+1. from nand2tetris chapter 6, C-Instruction
 
 https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/56440f_65a2d8eef0ed4e0ea2471030206269b5.pdf 
 
