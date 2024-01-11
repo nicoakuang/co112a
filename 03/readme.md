@@ -18,7 +18,6 @@ PC
 
 ``````
 ------------------------
-#bit and register note:
 
 #bit
 
@@ -41,29 +40,13 @@ Nand2Tetris Project 03 Sequential Logic: flip flop, register, RAM and program co
 
 #Ram notes:RAM8, RAM64, RAM512, RAM4K, RAM16K
 
-Ram 8
+To combine an 8-bit RAM into a 32-bit RAM, we need to double the number of bits in each RAM cell and arrange them into 32 bits. This means we will have 32 RAM cells, each storing 1 bit.
 
 <img src="images/image.png" width="200">
-
-ram 32
-
 <img src="images/image1.png" width="200">
-
-ram 512
-
 <img src="images/image2.png" width="200">
-
-ram 4k
-
 <img src="images/imag3.png" width="200">
-
-ram 16k
-
 <img src="images/img4.png" width="200">
-
-refer https://www.youtube.com/watch?v=5uSDC4Y_mVg
-
-Nand2Tetris Project 03 Sequential Logic: flip flop, register, RAM and program counter.
 
 ---
 
@@ -71,5 +54,11 @@ Nand2Tetris Project 03 Sequential Logic: flip flop, register, RAM and program co
 
 <img src="images/img5.png" width="200">
 
-got help by chatgpt to understand how assemble pc
+Reference:
+
+1. ChatGPT
+
+2. Nand2Tetris Project 03 Sequential Logic: flip flop, register, RAM and program counter.
+
+https://www.youtube.com/watch?v=5uSDC4Y_mVg
 
